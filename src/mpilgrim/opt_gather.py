@@ -1,8 +1,38 @@
 #!/usr/bin/python2.7
 '''
+---------------------------
+ Licensing and Distribution
+---------------------------
+
+Program name: Pilgrim
+Version     : 1.0
+License     : MIT/x11
+
+Copyright (c) 2019, David Ferro Costas (david.ferro@usc.es) and
+Antonio Fernandez Ramos (qf.ramos@usc.es)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+---------------------------
+
 *-----------------------------------*
 | Module name:  mpilgrim.opt_gather |
-| Last Update:  2019/02/21 (Y/M/D)  |
+| Last Update:  2019/04/03 (Y/M/D)  |
 | Main Author:  David Ferro-Costas  |
 *-----------------------------------*
 '''
@@ -357,6 +387,9 @@ def ls_struc(dctc):
     ctc_isoX_ts  = sorted([ctc for ctc in dctc.keys() if dctc[ctc]._type == 1 and dctc[ctc]._diso!={}])
     ctc_xx  = sorted([ctc for ctc in dctc.keys() if dctc[ctc]._type not in [0,1]])
     
+    numSP0, numSP0all = 0, 0
+    numSP1, numSP1all = 0, 0
+    numSPX, numSPXall = 0, 0
     for idx,ctcs in enumerate([ctc_root_min+ctc_isoX_min,ctc_root_ts+ctc_isoX_ts,ctc_xx]):
         if ctcs == []: continue
         for ctc in ctcs:
@@ -371,8 +404,11 @@ def ls_struc(dctc):
             else:
                try   : isostr = " ".join(diso["*"])
                except: isostr = "yes"
+            # count conformers
+            num1  = len(itcs)
+            num2  = int(sum([weight for itc,weight in itcs]))
             # variable to string
-            ncnfs = "%i (%i)"%(int(sum([weight for itc,weight in itcs])),len(itcs))
+            ncnfs = "%i (%i)"%(num2,num1)
             ch    = "%i"%ch
             mtp   = "%i"%mtp
             nif   = "%i"%sptype
@@ -382,7 +418,12 @@ def ls_struc(dctc):
             # add to table
             ltable  = " "+" | ".join(ltable)+" "
             stable += ib+ltable+"\n"
+            if   sptype == 0: numSP0 += num1; numSP0all += num2
+            elif sptype == 1: numSP1 += num1; numSP1all += num2
+            else            : numSPX += num1; numSPXall += num2
         stable += ib+divis+"\n"
+    stable += ib+"  * num(type 0) = %i (%i)\n"%(numSP0all,numSP0)
+    stable += ib+"  * num(type 1) = %i (%i)\n"%(numSP1all,numSP1)
     print stable
 #===============================================================#
 

@@ -1,0 +1,257 @@
+#-------------------------#
+# Adding data for:  gibbs #
+#-------------------------#
+start_gibbs nh3_planar.001
+    100.00  -55.40767707
+    200.00  -55.41034843
+    300.00  -55.41351740
+end_gibbs
+
+start_gibbs nh3_planar.msho
+    100.00  -55.40767707
+    200.00  -55.41034843
+    300.00  -55.41351740
+end_gibbs
+
+start_gibbs nh3_pyram.001
+    100.00  -55.42230858
+    200.00  -55.42500730
+    300.00  -55.42820565
+end_gibbs
+
+start_gibbs nh3_pyram.msho
+    100.00  -55.42230858
+    200.00  -55.42500730
+    300.00  -55.42820565
+end_gibbs
+
+#-------------------------#
+# Adding data for:    pfn #
+#-------------------------#
+start_pfn nh3_planar.001
+   -55.43554651
+   -55.40632275
+    100.00  1.19990E+01
+    200.00  9.59932E+01
+    300.00  3.24150E+02
+end_pfn
+
+start_pfn nh3_planar.msho
+   -55.43554651
+   -55.40632275
+    100.00  1.19990E+01
+    200.00  9.59932E+01
+    300.00  3.24150E+02
+end_pfn
+
+start_pfn nh3_pyram.001
+   -55.45294604
+   -55.42092698
+    100.00  2.61577E+01
+    200.00  2.09287E+02
+    300.00  7.08241E+02
+end_pfn
+
+start_pfn nh3_pyram.msho
+   -55.45294604
+   -55.42092698
+    100.00  2.61577E+01
+    200.00  2.09287E+02
+    300.00  7.08241E+02
+end_pfn
+
+#-------------------------#
+# Adding data for:    anh #
+#-------------------------#
+#-------------------------#
+# Adding data for:    zct #
+#-------------------------#
+start_zct nh3_planar.001
+    100.00  4.35377E+11
+    200.00  2.15614E+02
+    300.00  4.43798E+00
+end_zct
+
+#-------------------------#
+# Adding data for:    sct #
+#-------------------------#
+start_sct nh3_planar.001
+    100.00  9.85590E+11
+    200.00  3.90495E+02
+    300.00  5.24129E+00
+end_sct
+
+#-------------------------#
+# Adding data for:    cvt #
+#-------------------------#
+start_cvt nh3_planar.001
+    100.00  1.00000E+00
+    200.00  1.00000E+00
+    300.00  1.00000E+00
+end_cvt
+
+#-------------------------#
+# Adding data for: cagtst #
+#-------------------------#
+start_cagtst nh3_planar.001
+    100.00  1.00000E+00
+    200.00  1.00000E+00
+    300.00  1.00000E+00
+end_cagtst
+
+#-------------------------#
+# Adding data for: cagcvt #
+#-------------------------#
+start_cagcvt nh3_planar.001
+    100.00  1.00000E+00
+    200.00  1.00000E+00
+    300.00  1.00000E+00
+end_cagcvt
+
+#-------------------------#
+# Adding data for:  rcons #
+#-------------------------#
+start_rcons cvt.NH3inv.bw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons cvt.NH3inv.fw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons cvt.nh3inv.bw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons cvt.nh3inv.fw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons cvtsct.NH3inv.bw
+    100.00  1.76804E-13
+    200.00  1.57636E-12
+    300.00  7.66664E-11
+end_rcons
+
+start_rcons cvtsct.NH3inv.fw
+    100.00  1.76804E-13
+    200.00  1.57636E-12
+    300.00  7.66664E-11
+end_rcons
+
+start_rcons cvtsct.nh3inv.bw
+    100.00  2.13579E-13
+    200.00  1.74793E-12
+    300.00  7.64760E-11
+end_rcons
+
+start_rcons cvtsct.nh3inv.fw
+    100.00  2.13579E-13
+    200.00  1.74793E-12
+    300.00  7.64760E-11
+end_rcons
+
+start_rcons cvtzct.NH3inv.bw
+    100.00  8.30896E-14
+    200.00  9.26517E-13
+    300.00  6.62779E-11
+end_rcons
+
+start_rcons cvtzct.NH3inv.fw
+    100.00  8.30896E-14
+    200.00  9.26517E-13
+    300.00  6.62779E-11
+end_rcons
+
+start_rcons cvtzct.nh3inv.bw
+    100.00  9.43470E-14
+    200.00  9.65129E-13
+    300.00  6.47549E-11
+end_rcons
+
+start_rcons cvtzct.nh3inv.fw
+    100.00  9.43470E-14
+    200.00  9.65129E-13
+    300.00  6.47549E-11
+end_rcons
+
+start_rcons tst.NH3inv.bw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons tst.NH3inv.fw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons tst.nh3inv.bw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons tst.nh3inv.fw
+    100.00  2.16702E-25
+    200.00  4.47619E-15
+    300.00  1.45911E-11
+end_rcons
+
+start_rcons tstsct.NH3inv.bw
+    100.00  1.76804E-13
+    200.00  1.57636E-12
+    300.00  7.66664E-11
+end_rcons
+
+start_rcons tstsct.NH3inv.fw
+    100.00  1.76804E-13
+    200.00  1.57636E-12
+    300.00  7.66664E-11
+end_rcons
+
+start_rcons tstsct.nh3inv.bw
+    100.00  2.13579E-13
+    200.00  1.74793E-12
+    300.00  7.64760E-11
+end_rcons
+
+start_rcons tstsct.nh3inv.fw
+    100.00  2.13579E-13
+    200.00  1.74793E-12
+    300.00  7.64760E-11
+end_rcons
+
+start_rcons tstzct.NH3inv.bw
+    100.00  8.30896E-14
+    200.00  9.26517E-13
+    300.00  6.62779E-11
+end_rcons
+
+start_rcons tstzct.NH3inv.fw
+    100.00  8.30896E-14
+    200.00  9.26517E-13
+    300.00  6.62779E-11
+end_rcons
+
+start_rcons tstzct.nh3inv.bw
+    100.00  9.43470E-14
+    200.00  9.65129E-13
+    300.00  6.47549E-11
+end_rcons
+
+start_rcons tstzct.nh3inv.fw
+    100.00  9.43470E-14
+    200.00  9.65129E-13
+    300.00  6.47549E-11
+end_rcons
+

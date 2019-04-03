@@ -1,0 +1,71 @@
+   -----------------------
+    Analysis of STRUC: H2 
+   -----------------------
+   
+       Current date: 2019/04/03 12:30
+   
+       Pilgrim output file: 3-PLG_OUTPUT/pfn.H2.slevel.txt
+   
+       Number of conformers: 1
+       
+          min(V0) = -1.11750589 hartree (V0 = electronic energy)
+          min(V1) = -1.10501897 hartree (V1 = electronic energy + ZPE)
+       
+          Relative energies (in kcal/mol):
+          ---------------------------------------------------------------------
+          name | V0-min(V0) | V1-min(V1) |   ZPE   | mass (amu) | weight |  PG 
+          ---------------------------------------------------------------------
+           001 |      0.00  |      0.00  |    7.84 |      2.02  |    1   | Dinfv
+          ---------------------------------------------------------------------
+       
+       Conformation: 001
+          mol. formula      : H(2)
+          num atoms         : 2
+          num vib dof       : 1
+          charge            : 0
+          multiplicity      : 1
+          total energy (V0) : -1.11750589 hartree
+          total mass [root] : 2.0156 amu
+          total mass        : 2.0156 amu
+          point group       : Dinfv
+          rot sym num       : 2
+          Cartesian coordinates (Angstrom):
+             H    +0.000000   +0.000000   -0.356118  [  1.008 amu]
+             H    +0.000000   +0.000000   +0.356118  [  1.008 amu]
+          moments and product of inertia (au):
+                  +1.664E+03
+          vibrational frequencies [1/cm] (scaled by 1.000):
+             5481.13
+          individual zero-point energies [kcal/mol]:
+                7.84
+          zero-point energy (zpe) :    +0.01248692 hartree  = 
+                                             +7.84 kcal/mol = 
+                                             +0.34 eV       = 
+                                          +2740.56 cm^-1 
+          total energy + zpe (V1) :    -1.10501897 hartree
+          
+          partition functions (with regards electronic energy + ZPE):
+          -----------------------------------------------------------------------------
+              T (K)   |     tr     |     rot    |     vib    |     el     |     tot    
+          -----------------------------------------------------------------------------
+               250.00 |  3.150E-01 |  1.317E+00 |  1.000E+00 |  1.000E+00 |  4.150E-01 
+               300.00 |  4.141E-01 |  1.581E+00 |  1.000E+00 |  1.000E+00 |  6.547E-01 
+               350.00 |  5.218E-01 |  1.844E+00 |  1.000E+00 |  1.000E+00 |  9.625E-01 
+               400.00 |  6.376E-01 |  2.108E+00 |  1.000E+00 |  1.000E+00 |  1.344E+00 
+               450.00 |  7.608E-01 |  2.371E+00 |  1.000E+00 |  1.000E+00 |  1.804E+00 
+               500.00 |  8.910E-01 |  2.635E+00 |  1.000E+00 |  1.000E+00 |  2.348E+00 
+               700.00 |  1.476E+00 |  3.689E+00 |  1.000E+00 |  1.000E+00 |  5.445E+00 
+              1000.00 |  2.520E+00 |  5.270E+00 |  1.000E+00 |  1.000E+00 |  1.329E+01 
+              1500.00 |  4.630E+00 |  7.905E+00 |  1.005E+00 |  1.000E+00 |  3.679E+01 
+              2000.00 |  7.128E+00 |  1.054E+01 |  1.020E+00 |  1.000E+00 |  7.661E+01 
+              2500.00 |  9.962E+00 |  1.317E+01 |  1.045E+00 |  1.000E+00 |  1.371E+02 
+          -----------------------------------------------------------------------------
+            tr : translational partition funcion per volume unit (in au)
+            rot: rotational partition funcion (rigid-rotor)
+            vib: vibrational partition funcion (harmonic-oscillator)
+            el : electronic partition funcion
+            tot: total partition funcion per unit volume (in au)
+            
+            both rot and tot include rotational symmetry number
+          
+   

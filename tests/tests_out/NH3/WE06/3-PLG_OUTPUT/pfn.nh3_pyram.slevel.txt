@@ -1,0 +1,65 @@
+   ------------------------------
+    Analysis of STRUC: nh3_pyram 
+   ------------------------------
+   
+       Current date: 2019/04/03 12:17
+   
+       Pilgrim output file: 3-PLG_OUTPUT/pfn.nh3_pyram.slevel.txt
+   
+       Number of conformers: 1
+       
+          min(V0) = -0.00500482 hartree (V0 = electronic energy)
+          min(V1) = 0.02701424 hartree (V1 = electronic energy + ZPE)
+       
+          Relative energies (in kcal/mol):
+          ---------------------------------------------------------------------
+          name | V0-min(V0) | V1-min(V1) |   ZPE   | mass (amu) | weight |  PG 
+          ---------------------------------------------------------------------
+           001 |      0.00  |      0.00  |   20.09 |     17.03  |    1   |  C3v
+          ---------------------------------------------------------------------
+       
+       Conformation: 001
+          mol. formula      : H(3)N
+          num atoms         : 4
+          num vib dof       : 6
+          charge            : 0
+          multiplicity      : 1
+          total energy (V0) : -0.00500482 hartree
+          total mass [root] : 17.0265 amu
+          total mass        : 17.0265 amu
+          point group       : C3v
+          rot sym num       : 3
+          Cartesian coordinates (Angstrom):
+             N    +0.000000   +0.000003   -0.064352  [ 14.003 amu]
+             H    -0.812766   -0.468505   +0.298040  [  1.008 amu]
+             H    +0.812110   -0.469641   +0.298040  [  1.008 amu]
+             H    +0.000656   +0.938106   +0.298053  [  1.008 amu]
+          moments and product of inertia (au):
+                  +1.079E+04  +1.079E+04  +1.732E+04  [ 2.015E+12]
+          vibrational frequencies [1/cm] (scaled by 1.078):
+             1258.17   1773.26   1773.27   3061.06   3061.12   3127.86
+          individual zero-point energies [kcal/mol]:
+                1.80      2.54      2.54      4.38      4.38      4.47
+          zero-point energy (zpe) :    +0.03201906 hartree  = 
+                                            +20.09 kcal/mol = 
+                                             +0.87 eV       = 
+                                          +7027.37 cm^-1 
+          total energy + zpe (V1) :    +0.02701424 hartree
+          
+          partition functions (with regards electronic energy + ZPE):
+          -----------------------------------------------------------------------------
+              T (K)   |     tr     |     rot    |     vib    |     el     |     tot    
+          -----------------------------------------------------------------------------
+               100.00 |  1.957E+00 |  1.337E+01 |  1.000E+00 |  1.000E+00 |  2.616E+01 
+               200.00 |  5.534E+00 |  3.781E+01 |  1.000E+00 |  1.000E+00 |  2.093E+02 
+               300.00 |  1.017E+01 |  6.947E+01 |  1.003E+00 |  1.000E+00 |  7.082E+02 
+          -----------------------------------------------------------------------------
+            tr : translational partition funcion per volume unit (in au)
+            rot: rotational partition funcion (rigid-rotor)
+            vib: vibrational partition funcion (harmonic-oscillator)
+            el : electronic partition funcion
+            tot: total partition funcion per unit volume (in au)
+            
+            both rot and tot include rotational symmetry number
+          
+   

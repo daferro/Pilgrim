@@ -1,0 +1,81 @@
+   ----------------------------
+    Analysis of STRUC: PC_iso3 
+   ----------------------------
+   
+       Current date: 2019/04/03 13:06
+   
+       Pilgrim output file: 3-PLG_OUTPUT/pfn.PC_iso3.slevel.txt
+   
+       Number of conformers: 1
+       
+          min(V0) = -151.54440385 hartree (V0 = electronic energy)
+          min(V1) = -151.48490869 hartree (V1 = electronic energy + ZPE)
+       
+          Relative energies (in kcal/mol):
+          ---------------------------------------------------------------------
+          name | V0-min(V0) | V1-min(V1) |   ZPE   | mass (amu) | weight |  PG 
+          ---------------------------------------------------------------------
+           001 |      0.00  |      0.00  |   37.33 |     50.07  |    1   |  Cs 
+          ---------------------------------------------------------------------
+       
+       Conformation: 001
+          mol. formula      : C(2)H(5)O
+          num atoms         : 8
+          num vib dof       : 18
+          charge            : 0
+          multiplicity      : 2
+          total energy (V0) : -151.54440385 hartree
+          total mass [root] : 45.0340 amu
+          total mass        : 50.0654 amu
+          point group       : Cs
+          rot sym num       : 1
+          Cartesian coordinates (Angstrom):
+             C    +0.129027   +0.527083   +0.054532  [ 12.000 amu]
+             C    -1.181395   -0.290941   -0.002787  [ 12.000 amu]
+             O    +1.314645   -0.286992   -0.063768  [ 15.995 amu]
+             H    -2.037730   +0.370213   +0.090675  [  2.014 amu]
+             H    -1.256519   -0.823733   -0.945810  [  2.014 amu]
+             H    -1.213420   -1.015442   +0.805218  [  2.014 amu]
+             H    +0.147136   +1.266621   -0.753088  [  2.014 amu]
+             H    +0.190330   +1.074540   +1.001119  [  2.014 amu]
+          moments and product of inertia (au):
+                  +1.376E+05  +4.275E+05  +4.835E+05  [ 2.845E+16]
+          vibrational frequencies [1/cm] (scaled by 1.000):
+              158.13    358.65    401.71    726.47    873.82   1045.69
+             1086.46   1152.06   1295.24   1317.38   1323.24   1379.58
+             1512.80   2570.86   2599.69   2730.24   2790.82   2792.54
+          individual zero-point energies [kcal/mol]:
+                0.23      0.51      0.57      1.04      1.25      1.49
+                1.55      1.65      1.85      1.88      1.89      1.97
+                2.16      3.68      3.72      3.90      3.99      3.99
+          zero-point energy (zpe) :    +0.05949516 hartree  = 
+                                            +37.33 kcal/mol = 
+                                             +1.62 eV       = 
+                                         +13057.68 cm^-1 
+          total energy + zpe (V1) :  -151.48490869 hartree
+          
+          partition functions (with regards electronic energy + ZPE):
+          -----------------------------------------------------------------------------
+              T (K)   |     tr     |     rot    |     vib    |     el     |     tot    
+          -----------------------------------------------------------------------------
+               250.00 |  3.900E+01 |  1.884E+04 |  2.192E+00 |  2.000E+00 |  3.220E+06 
+               300.00 |  5.126E+01 |  2.476E+04 |  2.877E+00 |  2.000E+00 |  7.304E+06 
+               350.00 |  6.460E+01 |  3.120E+04 |  3.835E+00 |  2.000E+00 |  1.546E+07 
+               400.00 |  7.892E+01 |  3.812E+04 |  5.179E+00 |  2.000E+00 |  3.117E+07 
+               450.00 |  9.417E+01 |  4.549E+04 |  7.075E+00 |  2.000E+00 |  6.061E+07 
+               500.00 |  1.103E+02 |  5.328E+04 |  9.752E+00 |  2.000E+00 |  1.146E+08 
+               700.00 |  1.827E+02 |  8.826E+04 |  3.720E+01 |  2.000E+00 |  1.200E+09 
+              1000.00 |  3.120E+02 |  1.507E+05 |  2.860E+02 |  2.000E+00 |  2.689E+10 
+              1500.00 |  5.731E+02 |  2.768E+05 |  7.029E+03 |  2.000E+00 |  2.231E+12 
+              2000.00 |  8.824E+02 |  4.262E+05 |  1.215E+05 |  2.000E+00 |  9.141E+13 
+              2500.00 |  1.233E+03 |  5.957E+05 |  1.508E+06 |  2.000E+00 |  2.216E+15 
+          -----------------------------------------------------------------------------
+            tr : translational partition funcion per volume unit (in au)
+            rot: rotational partition funcion (rigid-rotor)
+            vib: vibrational partition funcion (harmonic-oscillator)
+            el : electronic partition funcion
+            tot: total partition funcion per unit volume (in au)
+            
+            both rot and tot include rotational symmetry number
+          
+   

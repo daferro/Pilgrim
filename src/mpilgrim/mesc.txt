@@ -1,0 +1,6 @@
+# name for software | package and module
+#------------------------------------------
+      gaussian        mpilgrim.itf_gau
+      orca            mpilgrim.itf_orca
+#     clhbrpot        mpilgrim.itf_asurf
+

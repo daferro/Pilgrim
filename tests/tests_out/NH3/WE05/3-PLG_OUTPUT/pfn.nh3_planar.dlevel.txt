@@ -1,0 +1,75 @@
+   -------------------------------
+    Analysis of STRUC: nh3_planar 
+   -------------------------------
+   
+       Current date: 2019/04/03 12:17
+   
+       Pilgrim output file: 3-PLG_OUTPUT/pfn.nh3_planar.dlevel.txt
+   
+       keyword --dlevel activated: applying High-Level energies to this STRUC
+   
+           * Low-level (LL) and high-level (HL) energies (in hartree):
+   
+             ---------------------------------------------------
+              conformer |     LL energy     |     HL energy     
+             ---------------------------------------------------
+              001       |       +0.00444368 |      -55.43554651 
+             ---------------------------------------------------
+   
+       Number of conformers: 1
+       
+          min(V0) = -55.43554651 hartree (V0 = electronic energy)
+          min(V1) = -55.40632275 hartree (V1 = electronic energy + ZPE)
+       
+          Relative energies (in kcal/mol):
+          ----------------------------------------------------------------------------------
+          name | V0-min(V0) | V1-min(V1) |   ZPE   | mass (amu) | weight |  PG  | imag.freq.
+          ----------------------------------------------------------------------------------
+           001 |      0.00  |      0.00  |   18.34 |     17.03  |    1   |  D3h |  -1036.59 
+          ----------------------------------------------------------------------------------
+       
+       Conformation: 001
+          mol. formula      : H(3)N
+          num atoms         : 4
+          num vib dof       : 6
+          charge            : 0
+          multiplicity      : 1
+          total energy (V0) : -55.43554651 hartree
+          total mass [root] : 17.0265 amu
+          total mass        : 17.0265 amu
+          point group       : D3h
+          rot sym num       : 6
+          Cartesian coordinates (Angstrom):
+             N    +0.000000   -0.000000   +0.000000  [ 14.003 amu]
+             H    +0.000000   +0.980756   +0.000000  [  1.008 amu]
+             H    +0.849360   -0.490378   -0.000000  [  1.008 amu]
+             H    -0.849360   -0.490378   +0.000000  [  1.008 amu]
+          moments and product of inertia (au):
+                  +9.466E+03  +9.466E+03  +1.893E+04  [ 1.696E+12]
+          vibrational frequencies [1/cm] (scaled by 1.078):
+            -1036.59   1712.55   1712.55   3119.67   3141.49   3141.49
+          individual zero-point energies [kcal/mol]:
+                0.00      2.45      2.45      4.46      4.49      4.49
+          zero-point energy (zpe) :    +0.02922376 hartree  = 
+                                            +18.34 kcal/mol = 
+                                             +0.80 eV       = 
+                                          +6413.87 cm^-1 
+          total energy + zpe (V1) :   -55.40632275 hartree
+          
+          partition functions (with regards electronic energy + ZPE):
+          -----------------------------------------------------------------------------
+              T (K)   |     tr     |     rot    |     vib    |     el     |     tot    
+          -----------------------------------------------------------------------------
+               100.00 |  1.957E+00 |  6.133E+00 |  1.000E+00 |  1.000E+00 |  1.200E+01 
+               200.00 |  5.534E+00 |  1.735E+01 |  1.000E+00 |  1.000E+00 |  9.599E+01 
+               300.00 |  1.017E+01 |  3.187E+01 |  1.001E+00 |  1.000E+00 |  3.242E+02 
+          -----------------------------------------------------------------------------
+            tr : translational partition funcion per volume unit (in au)
+            rot: rotational partition funcion (rigid-rotor)
+            vib: vibrational partition funcion (harmonic-oscillator)
+            el : electronic partition funcion
+            tot: total partition funcion per unit volume (in au)
+            
+            both rot and tot include rotational symmetry number
+          
+   

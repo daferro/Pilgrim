@@ -1,0 +1,18 @@
+# KMC Parameters
+psteps     1000       # print data each nstp steps
+volume     1.00E+00   # simulation volume (mL)
+timeunits  ps         # units for time variable
+
+# Initial (non-zero) populations (number of molecules)
+pop(Etoh)_0   1.00e+14
+pop(H)_0      1.00e+06
+pop(H2)_0     0.00e+00
+pop(PA)_0     0.00e+00
+pop(PB)_0     0.00e+00
+pop(PC)_0     0.00e+00
+
+# Selection of the rate constant to use
+     k(Ra.fw)*2 analytic4  7.774E-15  3.151E+03  3.555E+00  3.000E+02  2.581E+02 
+     k(Rb.fw)   analytic4  9.430E-15  4.349E+03  3.901E+00  3.000E+02  2.379E+02
+     k(Rc.fw)   analytic4  2.118E-13  1.247E+03  2.459E+00  3.000E+02  1.945E+02
+

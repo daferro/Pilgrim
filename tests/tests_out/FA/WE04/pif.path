@@ -1,0 +1,12 @@
+
+start_mep ZE_TS     
+  sbw      -1.3000  
+  sfw      +1.3000  
+  ds       0.01000   
+  hsteps   10     
+  fwdir    5-1-2-4  -- 
+  sctmns   10
+  scterr   0.100
+  useics   yes
+end_mep
+

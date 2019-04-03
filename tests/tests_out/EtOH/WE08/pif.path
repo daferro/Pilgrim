@@ -1,0 +1,31 @@
+
+start_mep TSA     
+  sbw      -0.5000  
+  sfw      +0.5000  
+  ds       0.01000   
+  hsteps   10     
+  fwdir    8-10  -- 
+  sctmns   20
+  scterr   1.000
+end_mep
+
+start_mep TSB     
+  sbw      -0.5000  
+  sfw      +0.5000  
+  ds       0.01000   
+  hsteps   10     
+  fwdir    4-10  -- 
+  sctmns   20
+  scterr   1.000
+end_mep
+
+start_mep TSC     
+  sbw      -0.5000  
+  sfw      +0.5000  
+  ds       0.01000   
+  hsteps   10     
+  fwdir    9-10  -- 
+  sctmns   20
+  scterr   1.000
+end_mep
+

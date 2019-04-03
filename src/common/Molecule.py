@@ -297,16 +297,16 @@ class Molecule():
 
       def info_string(self,ib=0):
           root_mass = sum(fncs.symbols2masses(self._symbols))
-          string  = "mol. formula      : %s\n"%self._mform
-          string += "num atoms         : %i\n"%self._natoms
-          string += "num vib dof       : %i\n"%self._nvdof
-          string += "charge            : %i\n"%self._ch
-          string += "multiplicity      : %i\n"%self._mtp
-          string += "total energy (V0) : %.8f hartree\n"%self._V0
-          string += "total mass [root] : %.4f amu\n"%(root_mass *AMU)
-          string += "total mass        : %.4f amu\n"%(self._mass*AMU)
-          if self._pgroup   is not None: string += "point group       : %s\n"%(self._pgroup)
-          if self._rotsigma is not None: string += "rot sym num       : %i\n"%(self._rotsigma)
+          string  = "mol. formula          : %s\n"%self._mform
+          string += "num atoms             : %i\n"%self._natoms
+          string += "num vib dof           : %i\n"%self._nvdof
+          string += "charge                : %i\n"%self._ch
+          string += "multiplicity          : %i\n"%self._mtp
+          string += "electronic energy (V0): %.8f hartree\n"%self._V0
+          string += "total mass [root]     : %.4f amu\n"%(root_mass *AMU)
+          string += "total mass            : %.4f amu\n"%(self._mass*AMU)
+          if self._pgroup   is not None: string += "point group           : %s\n"%(self._pgroup)
+          if self._rotsigma is not None: string += "rot sym num           : %i\n"%(self._rotsigma)
           string += "Cartesian coordinates (Angstrom):\n"
           for at,symbol in enumerate(self._symbols):
               mass   = self._masses[at]*AMU
@@ -345,12 +345,12 @@ class Molecule():
               zpe_kcal = self._cczpe * KCALMOL
               zpe_eV   = self._cczpe * EV
               zpe_cm   = self._cczpe * H2CM
-              str2 += "zero-point energy (zpe) : %+14.8f hartree  = \n"%zpe_au
-              str2 += "                          %+14.2f kcal/mol = \n"%zpe_kcal
-              str2 += "                          %+14.2f eV       = \n"%zpe_eV
-              str2 += "                          %+14.2f cm^-1 \n"%zpe_cm
+              str2 += "vibrational zero-point energy (ZPE): %+14.8f hartree  = \n"%zpe_au
+              str2 += "                                     %+14.2f kcal/mol = \n"%zpe_kcal
+              str2 += "                                     %+14.2f eV       = \n"%zpe_eV
+              str2 += "                                     %+14.2f cm^-1 \n"%zpe_cm
               #str2 += "zero-point energy (zpe) : %+14.8f hartree = %.2f kcal/mol = %.3f eV\n"%(zpe_au,zpe_kcal,zpe_eV)
-              str2 += "total energy + zpe (V1) : %+14.8f hartree\n"%self._ccV1
+              str2 += "electronic energy + ZPE (V1)       : %+14.8f hartree\n"%self._ccV1
               if self._cczpe != 0.0: string += str2
           except: pass
 

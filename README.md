@@ -137,7 +137,7 @@ You can run _Pilgrim_ by invoking the Python interpreter manually as follows:
 
 If you prefer to avoid invoking the Python interpreter, you have to follow these two simple steps:
 
-Add as the first line in pilgrim.py the following:
+Add as the first line in the pilgrim.py file the following:
 
 ```#!PATH_FOR_PYTHON python```
 
@@ -169,7 +169,7 @@ or
 
 Directory __tests__ contains two subdirectories:
 
-  - __tests\_to\_run__:   
+  - __tests\_to\_run/__:   
     Includes the electronic structure files (ESFILs) with the 
     stationary points needed to run each of the working examples (WEs) 
     using _Pilgrim_. See the manual for details.

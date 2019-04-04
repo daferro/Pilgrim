@@ -118,7 +118,7 @@ Example of paths are:
   - ```export Gauexe="/home/programs/G09_64D/g09/g09"``` 
   - ```export GauFchk="/home/programs/G09_64D/g09/formchk"```  
 
-Similarly, for __Orca__ users, this file has to contain environment variable:
+Similarly, for __Orca__ users, this file has to contain the environment variable:
 
   - _OrcaExe_, the path to the Orca executable.
 
@@ -137,7 +137,7 @@ You can run _Pilgrim_ by invoking the Python interpreter manually as follows:
 
 If you prefer to avoid invoking the Python interpreter, you have to follow these two simple steps:
 
-Add as first line in the pilgrim.py the following:
+Add as the first line in pilgrim.py the following:
 
 ```#!PATH_FOR_PYTHON python```
 

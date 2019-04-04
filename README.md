@@ -167,7 +167,7 @@ or
 
 ## Tests set
 
-Directory __tests__ contains two subdirectories:
+Directory __tests/__ contains two subdirectories:
 
   - __tests\_to\_run/__:   
     Includes the electronic structure files (ESFILs) with the 

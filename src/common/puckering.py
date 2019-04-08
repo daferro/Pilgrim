@@ -41,7 +41,9 @@ This module contains different functions
 related to puckering coordinates
 '''
 
-import fncs as fncs
+import numpy as np
+import fncs  as fncs
+import dicts as dd
 
 #===============================================#
 # Puckering coordinates                         #
@@ -68,7 +70,7 @@ def puckering_normal(list_Rj):
         Rp  += sin * Rj
         Rpp += cos * Rj
     normal = np.cross(Rp,Rpp)
-    return normalize_vec(normal)
+    return fncs.normalize_vec(normal)
 #-----------------------------------------------#
 def puckering_zjs(list_Rj,normal):
     ''' JACS 1975, 97:6, 1354-1358; eq (11) '''
@@ -103,7 +105,7 @@ def puckering_coords(xvec,atoms_in_ring=None):
        qcos *= +np.sqrt(2.0/N)
        qsin *= -np.sqrt(2.0/N)
        # Get q_m and phi_m
-       phi_m = sincos2angle(qsin,qcos)
+       phi_m = fncs.sincos2angle(qsin,qcos)
        q_m   = qcos / np.cos(phi_m)
        list_qm.append(q_m)
        list_phim.append(phi_m)
@@ -127,7 +129,7 @@ def puckering_6ring(xvec,atoms_in_ring=None):
     # Special case for 6 member-ring
     sintheta = q2/Q
     costheta = q3/Q
-    theta    = sincos2angle(sintheta,costheta)
+    theta    = fncs.sincos2angle(sintheta,costheta)
     return Q, theta, phi2
 #-----------------------------------------------#
 def classify_6ring(theta,phi):
@@ -137,7 +139,7 @@ def classify_6ring(theta,phi):
     p1 = (theta,phi)
     mindist = float("inf")
     for conf, p0 in dd.dicCONF6.items():
-        distance = angdist_sphere( p0,p1 )
+        distance = fncs.angdist_sphere( p0,p1 )
         if distance < mindist:
            mindist      = distance
            conformation = conf

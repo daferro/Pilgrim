@@ -41,7 +41,9 @@ of each chemical species with time, as well as providing its chemical yield.
 
 ## How to cite
 
-D. Ferro-Costas, D. G. Truhlar, A. Fernández-Ramos (to be published)
+D. Ferro-Costas, D. G. Truhlar, A. Fernández-Ramos, Pilgrim - version 1.0
+(University of Minneapolis, Minnesota, MN, and Universidade de Santiago
+de Compostela, Spain, 2019). https://github.com/daferro/Pilgrim
 
 
 ## Licensing and Distribution 

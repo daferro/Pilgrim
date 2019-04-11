@@ -452,6 +452,7 @@ def get_sct_part2(dMols,points,dv1={},case="cc",INTRPL=(INTRPLMODE,INTRPLNUM)):
 def get_sct_part3(svals,lmueff,VadiSpl,afreq,lEquant,E0,VAG,temps):
     '''
     discrete sum from E0 to VAG
+    Surface Science, 164, 558-588 (1985)
     '''
     lCOEF = []
     # Only energies between E0 and VAG
